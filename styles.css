@@ -1,0 +1,218 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-image: url("/img/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  width: 125px;
+  padding-top: 130px;
+  margin: 0 auto;
+}
+
+.top__title {
+  font-weight: 600;
+  color: #47515d;
+  font-size: 35px;
+  padding-top: 70px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.top__description {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+  color: #a7aaaf;
+  line-height: 20px;
+  margin: 0px auto;
+}
+
+.top__btn {
+  max-width: 550px;
+  border: none;
+  text-align: center;
+  padding: 1px 6px;
+  margin: 0 auto;
+}
+
+.top__btn--ios {
+  background-color: #26bba5;
+  margin-right: 10px;
+}
+
+.top__btn--mac {
+  background-color: #5f73ff;
+  margin-left: 10px;
+}
+
+.top__btn--ios, .top__btn--mac {
+  display: inline-block;
+  width: 228px;
+  height: 57px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  border-style: none;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.main__title {
+  font-weight: 600;
+  color: #47515d;
+  font-size: 35px;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 160px;
+}
+
+.main__description {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+  color: #a7aaaf;
+  line-height: 20px;
+  margin: 0px auto;
+  padding-top: 25px;
+}
+
+.main__desktop--img {
+  /* float: left; */
+  padding-top: 84px;
+  /* flex: 60%; */
+  margin-left: -60px;
+  float: left;
+  display: block;
+}
+
+.main__desktop--column {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* float: right; */
+  /*padding-right: 240px;
+        padding-top: 144px;*/
+  /* flex: 40%; */
+  padding-top: 60px;
+  margin-left: 800px;
+  display: block;
+}
+
+.main__title--column {
+  color: #47515d;
+}
+
+.main__description--column {
+  color: #a7aaaf;
+  text-align: left;
+  padding-bottom: 22px;
+}
+
+.main__title--ipad {
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__img, .main__img--ipad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 810px;
+  height: auto;
+  padding-top: 113px;
+}
+
+.main__title--tools {
+  padding-top: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 85px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0px auto;
+}
+
+.main__description--tools {
+  padding-top: 25px;
+}
+
+.main__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 85px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0px auto;
+}
+
+.main__features--icon {
+  display: block;
+  text-align: center;
+}
+
+.main__companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 170px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0px auto;
+}
+
+.main__companies--logo {
+  text-align: center;
+  padding: 70px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main__clipboard > p {
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 746px) {
+  .top__btn--ios, .top__btn--mac {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

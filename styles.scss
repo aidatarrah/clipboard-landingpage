@@ -1,0 +1,180 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url('/img/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.logo {
+    width: 125px;
+    padding-top: 130px;
+    margin: 0 auto;
+}
+
+.top {
+    &__title {
+        font-weight: 600;
+        color: rgb(71, 81, 93);
+        font-size: 35px;
+        padding-top: 70px;
+        text-align: center;
+        margin: 0px auto;
+    }
+    &__description {
+        padding-top: 25px;
+        padding-bottom: 50px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 200;
+        color: rgb(167, 170, 175);
+        line-height: 20px;
+        margin: 0px auto;
+    }
+    &__btn {
+        max-width: 550px;
+        border: none;
+        text-align: center;
+        padding: 1px 6px;
+        margin: 0 auto;
+    }
+    &__btn--ios {
+        background-color: rgb(38, 187, 165);
+        margin-right: 10px;
+    }
+    &__btn--mac {
+        background-color: rgb(95, 115, 255);
+        margin-left: 10px;
+    }
+    &__btn--ios, &__btn--mac {
+        display: inline-block;
+        width: 228px;
+        height: 57px;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 0.75px;
+        border-style: none;
+        border-radius: 50px;
+        padding: 20px;
+    }
+}
+
+.main {
+    &__title {
+        font-weight: 600;
+        color: rgb(71, 81, 93);
+        font-size: 35px;
+        text-align: center;
+        margin: 0px auto;
+        padding-top: 160px;
+    }
+    &__description {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 200;
+        color: rgb(167, 170, 175);
+        line-height: 20px;
+        margin: 0px auto;
+        padding-top: 25px;
+    }
+    &__desktop--img {
+        /* float: left; */
+        padding-top: 84px;
+        /* flex: 60%; */
+        margin-left: -60px;
+        float: left;
+        display: block;
+    }
+    &__desktop--column {
+       /* display: flex; */
+        /* flex-direction: column; */
+       /* float: right; */
+        /*padding-right: 240px;
+        padding-top: 144px;*/
+        /* flex: 40%; */
+        padding-top: 60px;
+        margin-left: 800px;
+        display: block;
+
+    }
+    &__title--column {
+        color: rgb(71, 81, 93);
+    }
+    &__description--column {
+        color: rgb(167, 170, 175);
+        text-align: left;
+        padding-bottom: 22px;
+    }
+
+   &__title--ipad {
+       margin: 0 auto;
+       align-items: center;
+   }
+   &__img, &__img--ipad {
+       display: flex;
+       margin: 0 auto;
+       width: 810px;
+       height: auto;
+       padding-top: 113px;
+   }
+   &__title--tools {
+       padding-top: 170px;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding-top: 85px;
+       flex-flow: row wrap;
+       margin: 0px auto;
+}
+   &__description--tools {
+       padding-top: 25px;
+}
+&__features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 85px;
+    flex-flow: row wrap;
+    margin: 0px auto;
+}
+&__features--icon {
+    display: block;
+    text-align: center;
+}
+&__companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 170px;
+    flex-flow: row wrap;
+    margin: 0px auto;
+}
+&__companies--logo{
+    text-align: center;
+    padding: 70px;
+    justify-content: space-around;
+}
+&__clipboard > p {
+    padding-bottom: 50px;
+} 
+
+}
+
+
+
+
+
+@media screen and (max-width:746px) {
+    .top__btn--ios, .top__btn--mac {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
