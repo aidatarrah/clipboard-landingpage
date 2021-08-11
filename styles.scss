@@ -95,7 +95,7 @@ body {
         display: block;
         background-color: saddlebrown;
         width: 100%;
-        height: 100%;
+        height: auto;
     }
     
     &__column {
@@ -104,9 +104,8 @@ body {
         padding-top: 120px;
         flex: 50%;
         background-color: rgb(95, 115, 255);
-        width: 100%;
-        height: auto;
     }
+    
     &__title--column {
         color: rgb(71, 81, 93);
     }
@@ -123,6 +122,8 @@ body {
    &__img, &__img--ipad {
       display: block;
       margin: 0 auto;
+      width: 100%;
+      height: auto;
    }
    &__title--tools {
        padding-top: 170px;
@@ -150,18 +151,13 @@ body {
 }
 &__companies {
     display: flex;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    padding-top: 170px;
-    margin: 0 auto;
+    justify-content: space-around;
+    width: 90%;
+    margin: 170px auto;
 }
 &__companies--logo{
-    width: 25%;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: red;
+    display: block;
+    padding: 10px;
 }
 &__clipboard > p {
     padding-bottom: 50px;
@@ -192,12 +188,16 @@ body {
     flex-direction: column;
     }
     &__media {
-        display: flex;
-        flex-direction: row;
-        float: right;
+    display: flex;
+    flex-direction: row;
+    float: inline-end;
     }
     li {
-        list-style: none;
+    list-style: none;
+    }
+    &__media--links {
+    display: inline;
+    float: right;
     }
 
 }
@@ -205,7 +205,7 @@ body {
 
 
 
-
+/*
 @media screen and (max-width:800px) {
     .top {
     &.__btn--ios, &.__btn--mac {
@@ -213,8 +213,8 @@ body {
             margin-right: 0px;
         }
     }
+
     .main {
-  
     &.__desktop {
         flex-direction: column;
         margin: 0 auto;
@@ -234,7 +234,7 @@ body {
         height: auto;
         margin: 0 auto;
     }
-    /*
+    
     &__companies {
         background-color: red;
         flex-direction: column;
@@ -247,7 +247,66 @@ body {
         text-align: center;
         flex: center;
     }
-    */
+    
   }
 
+}
+*/
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        &__desktop {
+        display: block;
+        width: 100%;
+        }
+        &__desktop--img {
+        margin: 0 auto;
+        max-width: 80%;
+        height: auto;
+        }
+    &__ipad {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+  .main {
+    &__desktop {
+        display: block;
+        width: 100%;
+        }
+        &__desktop--img {
+        margin: 0 auto;
+        max-width: 80%;
+        height: auto;
+        }
+        &__column {
+        padding-left: 30px;
+        padding-top: 120px;
+        background-color: yellow;
+        }
+        &__companies  {
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        align-content: center;
+        background-color:gray;
+
+        }
+        &__companies--logo {
+          display: block;
+          background-color: green;
+          padding: 20px;
+
+       }
+  }
+  
 }
