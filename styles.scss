@@ -169,91 +169,52 @@ body {
 
 .footer {
     flex: flex;
-    height: auto;
-    margin: 0 auto;
-    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #f5f6f8;
     padding: 43px 165px;
+
     &__wrap {
-    width: 90%;
-    }
-    &__logo {
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
     }
     &__menu {
     display: flex;
     }
     &__item {
-    display: flex;
-    padding: 30px;
+    display: block;
     font-size: 14px;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 0 92px;
     }
+    
     &__media {
+    display: grid;
+    padding: 20px;
+    }
+    &__item--media {
     display: flex;
     flex-direction: row;
-    float: inline-end;
+    justify-content: flex-end;
+    padding: 23px;
+    }
+    ul {
+        list-style: none;
+        margin: 0 auto;
     }
     li {
-    list-style: none;
-    }
-    &__media--links {
-    display: inline;
-    float: right;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px 10px;
+        justify-content: center;
     }
 
 }
 
-
-
-
-/*
-@media screen and (max-width:800px) {
-    .top {
-    &.__btn--ios, &.__btn--mac {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-    }
-
-    .main {
-    &.__desktop {
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    &.__desktop--img, &.__column {
-        width: 100%;
-        margin: 0 auto;
-        flex: 100%;
-    }
-    &.__column  {
-        text-align: left;
-        align-items: flex-start;
-        padding-left: 10px;
-    }
-    &.__img-ipad {
-        width: 50%;
-        height: auto;
-        margin: 0 auto;
-    }
-    
-    &__companies {
-        background-color: red;
-        flex-direction: column;
-    }
-    &__companies--logo {
-        display: block;
-        width: 50%;
-        margin: 0 auto;
-        align-content: center;
-        text-align: center;
-        flex: center;
-    }
-    
-  }
-
-}
-*/
 
 @media screen and (min-width: 1024px) {
     .main {
@@ -319,5 +280,34 @@ body {
           margin: 22px auto;
       }
   }
+.footer{
+display: grid;
+align-items: center;
+text-align: center;
 
+&__logo {
+display: block;
+align-items: center;
+width: 55px;
+height: auto;
+}
+&__menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+&__item {
+     margin: 0 auto;
+}
+ul {
+    display: inline;
+    align-items: center;
+    padding: auto;
+}
+li {
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+}
 }
