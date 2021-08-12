@@ -64,6 +64,9 @@ body {
         border-radius: 50px;
         padding: 20px;
     }
+    &__btn--copy {
+        padding-bottom: 145px;
+    }
 }
 
 .main {
@@ -86,14 +89,13 @@ body {
     }
     &__desktop {
         display: flex;
-        background-color: red;
+        padding-top: 80px;
         padding-bottom: 160px;
     }
     &__desktop--img {
-        padding-top: 84px;
+        margin-top: 84px;
         flex: 50%;
         display: block;
-        background-color: saddlebrown;
         width: 100%;
         height: auto;
     }
@@ -103,7 +105,6 @@ body {
         padding-left: 113px;
         padding-top: 120px;
         flex: 50%;
-        background-color: rgb(95, 115, 255);
     }
     
     &__title--column {
@@ -118,10 +119,11 @@ body {
    &__title--ipad {
        margin: 0 auto;
        align-items: center;
+       width: 100%;
    }
-   &__img, &__img--ipad {
+   &__img--ipad {
       display: block;
-      margin: 0 auto;
+      margin: 70px auto;
       width: 100%;
       height: auto;
    }
@@ -254,10 +256,18 @@ body {
 */
 
 @media screen and (min-width: 1024px) {
-
+    .main {
+        &__title--ipad {
+            width: 100%;
+        }
+        &__img--ipad {
+            display: block;
+            width: 50%;
+    }
 }
-
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+   
     .main {
         &__desktop {
         display: block;
@@ -265,15 +275,13 @@ body {
         }
         &__desktop--img {
         margin: 0 auto;
-        max-width: 80%;
-        height: auto;
         }
     &__ipad {
         width: 50%;
         height: auto;
         margin: 0 auto;
     }
-    }
+ }
 }
 
 @media screen and (max-width: 767px) {
@@ -285,28 +293,31 @@ body {
         }
         &__desktop--img {
         margin: 0 auto;
-        max-width: 80%;
-        height: auto;
         }
         &__column {
-        padding-left: 30px;
+        text-align: center;
+        padding-left: 0px;
         padding-top: 120px;
-        background-color: yellow;
+        }
+        &__description--column { 
+        text-align: center;
         }
         &__companies  {
         flex-direction: column;
-        margin: 0 auto;
+        margin: 20px auto;
+        justify-content: space-between;
         align-items: center;
-        align-content: center;
-        background-color:gray;
-
         }
         &__companies--logo {
           display: block;
-          background-color: green;
           padding: 20px;
-
        }
   }
-  
+
+  .top {
+      &__btn {
+          margin: 22px auto;
+      }
+  }
+
 }
