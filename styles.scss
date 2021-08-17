@@ -14,7 +14,9 @@ body {
 }
 
 .logo {
+    display: flex;
     width: 125px;
+    max-width: 100%;
     padding-top: 130px;
     margin: 0 auto;
 }
@@ -120,6 +122,7 @@ body {
        margin: 0 auto;
        align-items: center;
        width: 100%;
+       color: red;
    }
    &__img--ipad {
       display: block;
@@ -174,6 +177,7 @@ body {
     background-color: #f5f6f8;
     padding: 43px 165px;
     &__logo {
+        flex: flex;
         justify-content: center;
         justify-items: center;
     }
@@ -250,7 +254,7 @@ body {
 @media screen and (max-width: 767px) {
 
   .main {
-    &__desktop {
+        &__desktop {
         display: block;
         width: 100%;
         }
@@ -283,16 +287,20 @@ body {
       }
   }
 .footer{
-display: grid;
+display: flex;
 align-items: center;
 text-align: center;
 
 &__logo {
+display: flex;
 align-items: center;
+margin: 0 auto;
 width: 55px;
+max-width: 100%;
 height: auto;
 }
 &__logo--img {
+    display: flex;   
     max-width: 100%;
     height: auto;
     align-items: center;
