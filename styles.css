@@ -8,7 +8,7 @@ body {
   max-width: 100%;
   height: auto;
   font-family: 'Bai Jamjuree', sans-serif;
-  background-image: url("/img/bg-header-desktop.png");
+  background-image: url("../img/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -217,6 +217,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 100%;
   background-color: #f5f6f8;
   padding: 43px 140px;
 }
@@ -327,28 +328,6 @@ body {
     height: auto;
     margin: 0 auto;
   }
-}
-
-.footer__logo {
-  display: block;
-  margin: 0 auto;
-}
-
-.footer__wrap {
-  margin: 0 auto;
-  width: 100%;
-}
-
-.footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.footer__media {
-  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {

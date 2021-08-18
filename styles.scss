@@ -8,7 +8,7 @@ body {
     max-width: 100%;
     height: auto;
     font-family: 'Bai Jamjuree', sans-serif;
-    background-image: url('/img/bg-header-desktop.png');
+    background-image: url('../img/bg-header-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -171,11 +171,13 @@ body {
 .footer {
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
     background-color: #f5f6f8;
     padding: 43px 140px;
+
     &__logo {
-        justify-content: center;
-        justify-items: center;
+    justify-content: center;
+    justify-items: center;
     }
     &__wrap {
     display: flex;
@@ -193,7 +195,6 @@ body {
     flex-direction: column;
     justify-content: center;
     }
-    
     &__media {
     display: grid;
     justify-content: center;
@@ -205,16 +206,16 @@ body {
     padding: 23px;
     }
     &__item > ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0 auto;
     }
     li {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 10px;
     }
 
 }
@@ -232,6 +233,7 @@ body {
 }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+ 
    
     .main {
         &__desktop {
@@ -240,6 +242,7 @@ body {
         }
         &__desktop--img {
         margin: 0 auto;
+
         }
     &__ipad {
         width: 50%;
@@ -247,24 +250,8 @@ body {
         margin: 0 auto;
     }
  }
-}
-.footer {
-    &__logo{
-     display: block;
-     margin: 0 auto;
-    }
-    &__wrap {
-    margin: 0 auto;
-    width: 100%;
-    }
-    ul {
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
-    }
-    &__media {
-        margin: 0 auto;
-    }
+
+
 }
 
 @media screen and (max-width: 767px) {
